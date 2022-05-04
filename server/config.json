@@ -1,0 +1,35 @@
+{
+   "nome": "GodShisha",
+   "descricao": "GodShisha - Tabaria Virtual",
+   "sobre": {
+      "endereco": "Av Guaiapo, 1563, Maringá-PR",
+      "telefone": "44 99758-6617",
+      "email": "suporte@godshisha.com.br"
+   },
+   "categorias": [
+      {
+         "titulo": "Categoria 1",
+         "subtitulo": "SubTitulo 1",
+         "img": "/template/assets/img/categories/img1.jpg",
+         "caminho": "/categoria1"
+      },
+      {
+         "titulo": "Categoria 2",
+         "subtitulo": "SubTitulo 2",
+         "img": "/template/assets/img/categories/img1.jpg",
+         "caminho": "/categoria2"
+      },
+      {
+         "titulo": "Categoria 3",
+         "subtitulo": "SubTitulo 3",
+         "img": "/template/assets/img/categories/img1.jpg",
+         "caminho": "/categoria3"
+      },
+      {
+         "titulo": "Categoria 4",
+         "subtitulo": "SubTitulo 4",
+         "img": "/template/assets/img/categories/img1.jpg",
+         "caminho": "/categoria4"
+      }
+   ]
+}

@@ -1,0 +1,128 @@
+<%- include(process.cwd() + "/cliente/includes/header.ejs" ) %>
+
+
+
+   <!-- Start Navbar Area -->
+   <%- include(process.cwd() + "/cliente/includes/navbar.ejs" ) %>
+      <!-- End Navbar Area -->
+
+
+      <!-- Start Page Title -->
+      <div class="page-title-area">
+         <div class="container">
+            <div class="page-title-content">
+               <h2>Minha Conta</h2>
+               <ul>
+                  <li><a href="/">Inicio</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Start SignUP Area -->
+      <section class="ptb-100">
+
+         <div class="container">
+
+            <div class="col-md-12 row">
+
+               <div class="col-lg-2">
+                  <%- include(process.cwd() + "/cliente/includes/sidebarConta.ejs" ) %>
+               </div>
+
+
+               <div class="col-lg-10">
+                  <div class="woocommerce-widget-area">
+
+                     <div class="woocommerce-widget collections-list-widget">
+                        <h3 class="woocommerce-widget-title">Cadastro <a href="/produtos" class="default-btn" id="cadastrar">Produtos</a></h3>
+
+                        <div class="row" id="row">
+
+
+                           <div class="col-lg-6 col-md-6">
+                              <div class="form-group">
+                                 <label>Fotos do produto <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="file" class="form-control" multiple accept="image/*">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>SKU <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="text" class="form-control" id="sku">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>Nome <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="text" class="form-control" id="nome">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>Descricao <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="text" class="form-control" id="descricao">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>Preço <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="text" class="form-control" id="preco">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>Estoque <span class="required" id="reqSenha2">*</span></label>
+                                 <input type="text" class="form-control" id="estoque">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <label>Categoria <span class="required" id="reqSenha2">(ex: rosh, prato)</span></label>
+                                 <input type="text" class="form-control" id="categoria">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3 col-md-3">
+                              <div class="form-group">
+                                 <br/>
+                                 <button class="default-btn" style="width: 100%;" id="salvar">Salvar</button>
+                              </div>
+                           </div>
+
+        
+
+
+
+                        </div>
+
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+      </section>
+      <!-- End SignUP Area -->
+
+
+
+      <!-- Start Shopping Cart Modal -->
+      <%- include(process.cwd() + "/cliente/includes/carrinho.ejs" ) %>
+         <!-- End Shopping Cart Modal -->
+
+
+
+         <!-- Start Footer Area -->
+         <%- include(process.cwd() + "/cliente/includes/footer.ejs" , { scripts: [ `/cliente/js/produtosCadastro.js` ] } ) %>
+            <!-- End Footer Area -->

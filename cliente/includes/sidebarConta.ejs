@@ -1,0 +1,24 @@
+<div class="woocommerce-widget-area">
+
+   <div class="woocommerce-widget collections-list-widget">
+      <h3 class="woocommerce-widget-title">Menu</h3>
+
+      <% var actives={ conta: '' , enderecos: '' , pedidos: '' }; actives[local]='active' ; %>
+
+
+
+         <ul class="collections-list-row">
+            <li class="<%= actives['conta'] %>"><a href="/conta">Conta</a></li>
+            <li class="<%= actives['enderecos'] %>"><a href="/enderecos">Endereços</a></li>
+            <li class="<%= actives['pedidos'] %>"><a href="/pedidos">Pedidos</a></li>
+
+            <% if( sessao.conta.cargo=='admin' ){ %>
+
+               <li class="<%= actives['produtos'] %>"><a href="/produtos">Produtos</a></li>
+
+               <% } %>
+
+         </ul>
+   </div>
+
+</div>

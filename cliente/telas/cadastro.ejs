@@ -1,0 +1,136 @@
+<%- include(process.cwd() + "/cliente/includes/header.ejs" ) %>
+
+
+
+   <!-- Start Navbar Area -->
+   <%- include(process.cwd() + "/cliente/includes/navbar.ejs" ) %>
+      <!-- End Navbar Area -->
+
+
+      <!-- Start Page Title -->
+      <div class="page-title-area">
+         <div class="container">
+            <div class="page-title-content">
+               <h2>Minha Conta</h2>
+               <ul>
+                  <li><a href="/">Inicio</a></li>
+                  <li><a href="/entrar">Entrar</a></li>
+                  <li>Cadastro</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Start SignUP Area -->
+      <section class="signup-area ptb-100">
+         <div class="container">
+            <div class="signup-content">
+               <h2>Criar minha Conta</h2>
+
+               <div class="row">
+                  <h4>Informações de Conta</h4>
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Nome <span class="required" id="reqNome">*</span></label>
+                        <input type="text" class="form-control" id="nome">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Sobrenome <span class="required" id="reqSobreNome">*</span></label>
+                        <input type="text" class="form-control" id="sobrenome">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                     <div class="form-group">
+                        <label>CPF <span class="required" id="reqCPF">*</span></label>
+                        <input type="text" class="form-control" id="cpf">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                     <div class="form-group">
+                        <label>Data Nascimento <span class="required" id="reqData">*</span></label>
+                        <input type="text" class="form-control" id="dataNascimento">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4">
+                     <div class="form-group">
+                        <label>Sexo <span class="required" id="reqSEXO">*</span></label>
+                        <select class="form-control" id="sexo">
+                           <option value="M">Masculino</option>
+                           <option value="F">Feminino</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Telefone <span class="required" id="reqTelefone">*</span></label>
+                        <input type="text" class="form-control" id="telefone">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Celular <span class="required" id="reqCelular">*</span></label>
+                        <input type="text" class="form-control" id="celular">
+                     </div>
+                  </div>
+
+
+               </div>
+
+               <hr />
+
+               <div class="row">
+                  <h4>Informações de Acesso</h4>
+
+                  <div class="col-lg-12 col-md-12">
+                     <div class="form-group">
+                        <label>Email <span class="required" id="reqEmail">*</span></label>
+                        <input type="email" class="form-control" id="email">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Senha <span class="required" id="reqSenha">*</span></label>
+                        <input type="password" class="form-control" id="senha">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="form-group">
+                        <label>Senha confirmação <span class="required"id="reqSenha2">*</span></label>
+                        <input type="password" class="form-control" id="senha2">
+                     </div>
+                  </div>
+
+
+               </div>
+               <hr />
+               <div class="col-lg-12 col-md-12">
+                  <button class="default-btn" style="width: 100%;" id="cadastrar">Cadastrar</button>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <!-- End SignUP Area -->
+
+
+
+      <!-- Start Shopping Cart Modal -->
+      <%- include(process.cwd() + "/cliente/includes/carrinho.ejs" ) %>
+         <!-- End Shopping Cart Modal -->
+
+
+
+         <!-- Start Footer Area -->
+         <%- include(process.cwd() + "/cliente/includes/footer.ejs" , { scripts: [ `/cliente/js/cadastro.js` ] } ) %>
+            <!-- End Footer Area -->

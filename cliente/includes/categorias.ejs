@@ -1,0 +1,28 @@
+<section class="categories-banner-area pt-100 pb-70">
+   <div class="container-fluid">
+      <div class="row">
+
+         <%
+         
+         for(var i = 0; i < config.categorias.length; i++){
+            var item = config.categorias[i];
+
+         %>
+         <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-categories-box">
+               <img src="<%= item.img %>" alt="image">
+
+               <div class="content text-white">
+                  <span><%= item.titulo %></span>
+                  <h3><%= item.subtitulo %></h3>
+                  <a href="<%= item.caminho %>" class="default-btn">Ver Agora</a>
+               </div>
+               <a href="<%= item.caminho %>" class="link-btn"></a>
+            </div>
+         </div>
+
+         <% } %>
+         
+      </div>
+   </div>
+</section>

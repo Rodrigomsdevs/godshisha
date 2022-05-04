@@ -1,0 +1,150 @@
+<%- include(process.cwd() + "/cliente/includes/header.ejs" ) %>
+
+
+
+   <!-- Start Navbar Area -->
+   <%- include(process.cwd() + "/cliente/includes/navbar.ejs" ) %>
+      <!-- End Navbar Area -->
+
+
+      <!-- Start Page Title -->
+      <div class="page-title-area">
+         <div class="container">
+            <div class="page-title-content">
+               <h2>Minha Conta</h2>
+               <ul>
+                  <li><a href="/">Inicio</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Start SignUP Area -->
+      <section class="ptb-100">
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class="col-lg-2">
+                  <%- include(process.cwd() + "/cliente/includes/sidebarConta.ejs" ) %>
+               </div>
+
+               <div class="col-lg-10">
+                  <div class="woocommerce-widget-area">
+
+                     <div class="woocommerce-widget collections-list-widget">
+                        <h3 class="woocommerce-widget-title">Endereços Cadastrados</h3>
+
+                        <div class="row" id="appendEnderecos">
+
+
+
+                        </div>
+
+
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="modalNewEndereco">
+            <div class="modal-dialog modal-lg" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title">Cadastro de Endereço</h5>
+                  </div>
+                  <div class="modal-body">
+                     <div class="col-md-12">
+
+                        <div class="row">
+
+
+                           <div class="col-lg-2">
+                              <div class="form-group">
+                                 <label>CEP <span class="required" id="reqCEP">*</span></label>
+                                 <input type="text" class="form-control" id="cep">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-6 col-md-6">
+                              <div class="form-group">
+                                 <label>Rua <span class="required" id="reqRua">*</span></label>
+                                 <input type="text" class="form-control" id="rua" disabled>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-2">
+                              <div class="form-group">
+                                 <label>Numero <span class="required" id="reqNumero">*</span></label>
+                                 <input type="text" class="form-control" id="numero">
+                              </div>
+                           </div>
+
+                           <div class="col-lg-2">
+                              <div class="form-group">
+                                 <label>Complemento <span class="required" id="reqComplemento">*</span></label>
+                                 <input type="text" class="form-control" id="complemento">
+                              </div>
+                           </div>
+
+                        </div>
+
+
+                        <!----------------------------------------->
+
+                        <div class="row">
+
+
+                           <div class="col-lg-3">
+                              <div class="form-group">
+                                 <label>Bairro <span class="required" id="reqBairro">*</span></label>
+                                 <input type="text" class="form-control" id="bairro" disabled>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-6 col-md-6">
+                              <div class="form-group">
+                                 <label>Cidade <span class="required" id="reqCidade">*</span></label>
+                                 <input type="text" class="form-control" id="cidade" disabled>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3">
+                              <div class="form-group">
+                                 <label>Estado <span class="required" id="reqEstado">*</span></label>
+                                 <input type="text" class="form-control" id="estado" disabled>
+                              </div>
+                           </div>
+
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" id="salvarEndereco"s>Salvar</button>
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <!-- End SignUP Area -->
+
+
+
+      <!-- Start Shopping Cart Modal -->
+      <%- include(process.cwd() + "/cliente/includes/carrinho.ejs" ) %>
+         <!-- End Shopping Cart Modal -->
+
+
+
+         <!-- Start Footer Area -->
+         <%- include(process.cwd() + "/cliente/includes/footer.ejs" , { scripts: [ `/cliente/js/endereco.js` ] } ) %>
+            <!-- End Footer Area -->

@@ -1,0 +1,106 @@
+<footer class="footer-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+               <h3>Sobre</h3>
+
+               <div class="about-the-store">
+                  <ul class="footer-contact-info">
+                     <li><i class='bx bx-map'></i> <a href="#" target="_blank">
+                           <%= config.sobre.endereco %>
+                        </a></li>
+                     <li><i class='bx bx-phone-call'></i> <a href="tel:+55<%= config.sobre.telefone %>">
+                           <%= config.sobre.telefone %>
+                        </a></li>
+                     <li><i class='bx bx-envelope'></i> <a href="mailto:<%= config.sobre.email %>">
+                           <%= config.sobre.email %>
+                        </a></li>
+                  </ul>
+               </div>
+
+               <ul class="social-link">
+                  <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                  <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                  <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                  <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                  <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-pinterest-alt'></i></a></li>
+               </ul>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+               <h3>Acesso Rápido</h3>
+
+               <ul class="customer-support">
+                  <li><a href="/conta">Minha Conta</a></li>
+                  <li><a href="/checkout">Checkout</a></li>
+                  <li><a href="/carrinho">Carrinho</a></li>
+               </ul>
+            </div>
+         </div>
+
+
+      </div>
+
+      <div class="footer-bottom-area">
+         <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+               <p>Desenvolvido por RodrigoMS <a href="#" target="_blank">RodrigoMS</a></p>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+               <ul class="payment-types">
+                  <li><a href="#" target="_blank"><img src="/template/assets/img/payment/visa.png" alt="image"></a></li>
+                  <li><a href="#" target="_blank"><img src="/template/assets/img/payment/mastercard.png" alt="image"></a></li>
+                  <li><a href="#" target="_blank"><img src="/template/assets/img/payment/mastercard2.png" alt="image"></a></li>
+                  <li><a href="#" target="_blank"><img src="/template/assets/img/payment/visa2.png" alt="image"></a></li>
+                  <li><a href="#" target="_blank"><img src="/template/assets/img/payment/expresscard.png" alt="image"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+   </div>
+</footer>
+
+
+<div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
+
+<!-- Links of JS files -->
+<script src="/template/assets/js/jquery.min.js"></script>
+<script src="/template/assets/js/popper.min.js"></script>
+<script src="/template/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/template/assets/js/owl.carousel.min.js"></script>
+<script src="/template/assets/js/magnific-popup.min.js"></script>
+<script src="/template/assets/js/parallax.min.js"></script>
+<script src="/template/assets/js/rangeSlider.min.js"></script>
+<script src="/template/assets/js/nice-select.min.js"></script>
+<script src="/template/assets/js/meanmenu.min.js"></script>
+<script src="/template/assets/js/isotope.pkgd.min.js"></script>
+<script src="/template/assets/js/slick.min.js"></script>
+<script src="/template/assets/js/sticky-sidebar.min.js"></script>
+<script src="/template/assets/js/wow.min.js"></script>
+<script src="/template/assets/js/form-validator.min.js"></script>
+<script src="/template/assets/js/contact-form-script.js"></script>
+<script src="/template/assets/js/ajaxchimp.min.js"></script>
+<script src="/template/assets/js/main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/cliente/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/b-2.2.2/b-colvis-2.2.2/b-html5-2.2.2/datatables.min.js"></script>
+
+<% if(scripts){ for(var i=0; i < scripts.length; i++){ %>
+   <script src="<%= scripts[i] %>"></script>
+      <% } } %>
+
+         </body>
+
+         </html>

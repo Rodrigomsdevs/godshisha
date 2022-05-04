@@ -1,0 +1,86 @@
+<%- include(process.cwd() + "/cliente/includes/header.ejs" ) %>
+
+
+
+    <!-- Start Navbar Area -->
+    <%- include(process.cwd() + "/cliente/includes/navbar.ejs" ) %>
+        <!-- End Navbar Area -->
+
+
+        <!-- Start Page Title -->
+        <div class="page-title-area">
+            <div class="container">
+                <div class="page-title-content">
+                    <h2>Minha Conta</h2>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- Start SignUP Area -->
+        <section class="ptb-100">
+
+            <div class="container">
+
+                <div class="col-md-12 row">
+
+                    <div class="col-lg-2">
+                        <%- include(process.cwd() + "/cliente/includes/sidebarConta.ejs" ) %>
+                    </div>
+
+
+                    <div class="col-lg-10">
+                        <div class="woocommerce-widget-area">
+
+                            <div class="woocommerce-widget collections-list-widget">
+                                <h3 class="woocommerce-widget-title">Produtos Cadastrados <a href="/produtos/novo" class="default-btn" id="cadastrar">Novo Produto</a></h3>
+                                
+                                <div class="row" id="row">
+
+
+                                    <table id="produtosTable" class="table stripe" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>SKU</th>
+                                                <th>Imagem</th>
+                                                <th>Nome</th>
+                                                <th>Preço</th>
+                                                <th>Estoque</th>
+                                                <th>Ativo</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="bodyProdutosListagem">
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End SignUP Area -->
+
+
+
+        <!-- Start Shopping Cart Modal -->
+        <%- include(process.cwd() + "/cliente/includes/carrinho.ejs" ) %>
+            <!-- End Shopping Cart Modal -->
+
+
+
+            <!-- Start Footer Area -->
+            <%- include(process.cwd() + "/cliente/includes/footer.ejs" , { scripts: [ `/cliente/js/produtosListagem.js` ] } ) %>
+                <!-- End Footer Area -->
