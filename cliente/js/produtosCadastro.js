@@ -8,6 +8,7 @@ $("#salvar").click(() => {
    formData.append('preco', $("#preco").val());
    formData.append('estoque', $("#estoque").val());
    formData.append('categoria', $("#categoria").val());
+   formData.append('marca', $("#marca").val());
 
    var files = $('input[type=file]')[0].files;
 

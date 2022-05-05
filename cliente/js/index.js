@@ -22,7 +22,7 @@ function loadNovosProdutos(){
 
 
                $("#listaNovos").append(`
-               <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="col-lg-3 col-md-6 col-sm-6">
                <div class="single-products-box">
                   <div class="products-image">
                      <a href="/${produto.nome.split(' ').join("_")}/${produto.id}">
@@ -48,7 +48,7 @@ function loadNovosProdutos(){
                   <div class="products-content">
                      <h3><a href="/${produto.nome.split(' ').join("_")}/${produto.id}">${produto.nome}</a></h3>
                      <div class="price">
-                        <span class="old-price">R$ ${(produto.preco + (produto.preco * 0.2))}</span>
+                        <span class="old-price">R$ ${parseInt((produto.preco + (produto.preco * 0.2)))}</span>
                         <span class="new-price">R$ ${produto.preco}</span>
                      </div>
                      <div class="star-rating">

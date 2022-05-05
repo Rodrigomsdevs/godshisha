@@ -31,11 +31,11 @@ function ativaDesativa(produtoID) {
    });
 }
 
-function cadastraPproduto(files, sku, nome, descricao, preco, estoque, categoria) {
+function cadastraPproduto(files, sku, nome, descricao, preco, estoque, categoria, marca) {
    return new Promise((resolve, reject) => {
 
-      functions.sqlQuery('INSERT INTO `produtos`(`sku`, `nome`, `descricao`, `preco`, `ativo`, `estoque`) VALUES (?, ?, ?, ?, ?, ?)', [
-         sku, nome, descricao, preco, estoque, categoria]).then(async (result) => {
+      functions.sqlQuery('INSERT INTO `produtos`(`sku`, `nome`, `descricao`, `preco`, `ativo`, `estoque`, `categoria`, `marca`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [
+         sku, nome, descricao, preco, 1, estoque, categoria, marca]).then(async (result) => {
 
             var produtoID = result[2];
 

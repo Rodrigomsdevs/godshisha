@@ -20,7 +20,7 @@ router.delete('/api/excluiEnderecoCliente', functions.verificarLogado(), usuario
 
 router.get('/produtos/novo', functions.verificarLogado(), produtos.novoProduto);
 
-router.get('/api/produtos', functions.verificarLogado(), produtos.getProdutos);
+router.get('/api/produtos', produtos.getProdutos);
 router.put('/api/produtos/ativadesativa', functions.verificarLogado(), produtos.ativaDesativa);
 router.post('/api/produtos', functions.verificarLogado(), produtos.cadastraPproduto);
 

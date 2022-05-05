@@ -42,7 +42,7 @@ function cadastraPproduto(req, res) {
 
    var files = req.files;
 
-   if (!req.body.sku || !req.body.nome || !req.body.descricao || !req.body.preco || !req.body.estoque || !req.body.categoria) {
+   if (!req.body.sku || !req.body.nome || !req.body.descricao || !req.body.preco || !req.body.estoque || !req.body.categoria || !req.body.marca) {
       res.send(JSON.stringify({ success: false, msg: 'Dados invalidos!' }));
       return;
    }
@@ -53,8 +53,9 @@ function cadastraPproduto(req, res) {
    var preco = req.body.preco;
    var estoque = req.body.estoque;
    var categoria = req.body.categoria;
+   var marca = req.body.marca;
 
-   model.cadastraPproduto(files, sku, nome, descricao, preco, estoque, categoria).then(() => {
+   model.cadastraPproduto(files, sku, nome, descricao, preco, estoque, categoria, marca).then(() => {
       res.send(JSON.stringify({ success: true, msg: 'Produto inserido!' }));
    }).catch((err) => {
       console.log(err);
